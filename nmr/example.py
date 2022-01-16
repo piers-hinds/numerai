@@ -1,7 +1,6 @@
-from helpers import TimeSeriesSplitGroups
+from nmr.helpers import TimeSeriesSplitGroups
 import numpy as np
 import pandas as pd
-import torch
 
 x = np.random.random([10])
 idx = np.linspace(0, 9, 10).astype(int)
