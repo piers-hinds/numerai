@@ -1,5 +1,7 @@
 from sklearn.model_selection._split import _BaseKFold, indexable, _num_samples
 import numpy as np
+import pandas as pd
+from numerapi import NumerAPI
 
 
 class TimeSeriesSplitGroups(_BaseKFold):
@@ -28,3 +30,24 @@ class TimeSeriesSplitGroups(_BaseKFold):
                    indices[groups.isin(group_list[test_start:test_start + test_size])])
 
 
+def create_api(public_id=None, secret_key=None):
+    """create a Numerai API instance
+    if you want to submit your prediction,
+    you need to create api key via "setting" of numerai webpage
+    Args:
+        public_id (str, optional): user id. Defaults to None.
+        secret_key (str, optional): user api secret key. Defaults to None.
+    Returns:
+        NumerAPI: numerai api instance
+    """
+    if public_id == secret_key == None:
+        return NumerAPI(verbosity="info")
+    else:
+        return NumerAPI(public_id, secret_key)
+
+
+def load_data(fname='numerai_training_data.parquet'):
+    data = pd.read_parquet(fname)
+    data.dropna(inplace=True)
+    features = data.columns[data.columns.str.startswith('feature')]
+    return data, features

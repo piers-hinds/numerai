@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e238d4c-77af-4f4c-90ec-2a44970968af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nmr/dataloaders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nmr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmr/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nmr/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmr/example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nmr/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmr/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simple.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
