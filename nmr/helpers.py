@@ -26,3 +26,5 @@ class TimeSeriesSplitGroups(_BaseKFold):
         for test_start in test_starts:
             yield (indices[groups.isin(group_list[:test_start])],
                    indices[groups.isin(group_list[test_start:test_start + test_size])])
+
+

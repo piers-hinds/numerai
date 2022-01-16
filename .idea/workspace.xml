@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e238d4c-77af-4f4c-90ec-2a44970968af" name="Default Changelist" comment="" />
+    <list default="true" id="5e238d4c-77af-4f4c-90ec-2a44970968af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nmr/dataloaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nmr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nmr/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmr/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nmr/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmr/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simple.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +30,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -41,7 +49,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in tests">
+  <component name="RunManager" selected="Python tests.pytest in test_simple.py">
+    <configuration name="example (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="numerai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nmr" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nmr/example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="numerai" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,6 +134,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_simple.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="numerai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_simple.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="numerai" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,9 +169,13 @@
       <item itemvalue="Python.example" />
       <item itemvalue="Python.simple_tests" />
       <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python.example (1)" />
+      <item itemvalue="Python tests.pytest in test_simple.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_simple.py" />
+        <item itemvalue="Python.example (1)" />
         <item itemvalue="Python.simple_tests" />
         <item itemvalue="Python.example" />
         <item itemvalue="Python.helpers" />
