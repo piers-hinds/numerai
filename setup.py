@@ -7,7 +7,7 @@ setup(
     author='Piers Hinds',
     author_email='pmxph7@nottingham.ac.uk',
     packages=['nmr'],
-    install_requires=['numpy', 'torch', 'pandas', 'numerapi', 'sklearn'],
+    install_requires=['numpy', 'torch', 'pandas', 'numerapi', 'sklearn', 'scipy'],
     tests_require=['pytest'],
     version=__version__,
     license='MIT',

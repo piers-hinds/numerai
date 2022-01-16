@@ -2,6 +2,7 @@ from sklearn.model_selection._split import _BaseKFold, indexable, _num_samples
 import numpy as np
 import pandas as pd
 from numerapi import NumerAPI
+from scipy.stats import spearmanr
 
 
 class TimeSeriesSplitGroups(_BaseKFold):
@@ -51,3 +52,7 @@ def load_data(fname='numerai_training_data.parquet'):
     data.dropna(inplace=True)
     features = data.columns[data.columns.str.startswith('feature')]
     return data, features
+
+
+def spearman(y_true, y_pred):
+    return spearmanr(y_pred, y_true).correlation
