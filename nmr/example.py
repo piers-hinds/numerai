@@ -2,16 +2,18 @@ from nmr import *
 import numpy as np
 import pandas as pd
 
-tiny_data = pd.read_csv('../tiny_data.csv')
+tiny_data = pd.read_csv('../small_data.csv')
 features = tiny_data.columns[tiny_data.columns.str.startswith('feature')]
 targets = ['target']
+tiny_data
 
 splitter = TimeSeriesSplitGroups(5)
-for train_index, test_index in splitter.split(tiny_data, tiny_data.target, tiny_data.era):
-    pass
-print(train_index); print(test_index)
+new_splitter = PurgedTimeSeriesSplit(5)
 
-train_dl, val_dl = get_dataloaders(tiny_data, train_index, test_index, features, targets)
-print(tiny_data.target.iloc[:25])
-for x, y in train_dl:
-    print(y)
+# for train_index, test_index in splitter.split(tiny_data, tiny_data.target, tiny_data.era):
+#     print('Train: ', train_index);
+#     print('Test: ', test_index)
+
+for train_index, test_index in new_splitter.split(tiny_data, tiny_data.target, tiny_data.era):
+    print('Train: ', train_index);
+    print('Test: ', test_index)
