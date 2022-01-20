@@ -8,7 +8,7 @@ targets = ['target']
 tiny_data
 
 splitter = TimeSeriesSplitGroups(5)
-new_splitter = PurgedTimeSeriesSplit(5)
+new_splitter = PurgedSlidingSplit(3)
 
 # for train_index, test_index in splitter.split(tiny_data, tiny_data.target, tiny_data.era):
 #     print('Train: ', train_index);
