@@ -11,23 +11,23 @@ class TimeSeriesSplitGroups(_BaseKFold):
 
     def split(self, X, y=None, groups=None):
         X, y, groups = indexable(X, y, groups)
-        n_samples = _num_samples(X) # 500
-        n_splits = self.n_splits # 3
-        n_folds = n_splits + 1 # 4
-        group_list = np.unique(groups) # eras 1:50
-        n_groups = len(group_list) # 50
+        n_samples = _num_samples(X)
+        n_splits = self.n_splits
+        n_folds = n_splits + 1
+        group_list = np.unique(groups)
+        n_groups = len(group_list)
         if n_folds > n_groups:
             raise ValueError(
                 ("Cannot have number of folds ={0} greater"
                  " than the number of samples: {1}.").format(n_folds,
                                                              n_groups))
-        indices = np.arange(n_samples) #1:500
-        test_size = (n_groups // n_folds) # 50 // 4
+        indices = np.arange(n_samples)
+        test_size = (n_groups // n_folds)
         print(test_size)
         test_starts = range(test_size + n_groups % n_folds,
                             n_groups, test_size)
 
-        test_starts = list(test_starts)[::-1]
+        test_starts = list(test_starts)
         print(test_starts)
         for test_start in test_starts:
             yield (indices[groups.isin(group_list[:test_start])],
@@ -56,7 +56,7 @@ class PurgedTimeSeriesSplit(_BaseKFold):
         test_starts = range(test_size + n_groups % n_folds,
                             n_groups, test_size)
 
-        test_starts = list(test_starts)[::-1]
+        test_starts = list(test_starts)
         for test_start in test_starts:
             yield (indices[groups.isin(group_list[:test_start - self.purge])],
                    indices[groups.isin(group_list[test_start:test_start + test_size])])
@@ -85,7 +85,6 @@ class PurgedSlidingSplit(_BaseKFold):
                             n_groups, test_size)
 
         test_starts = list(test_starts)
-        print(test_starts)
         for i, test_start in enumerate(test_starts):
             train_end = test_start - self.purge
             yield (indices[groups.isin(group_list[test_start-test_starts[0]:train_end])],
